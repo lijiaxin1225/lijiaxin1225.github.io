@@ -2,71 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Resume – Jiaxin Li</title>
+    <title>Jiaxin Li | Personal Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Resume – Jiaxin Li</h1>
-        <p>Master of Engineering in Financial Engineering | Cornell University</p>
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
+        <h1>Hi, I'm Jiaxin Li</h1>
+        <p>Master of Engineering, Financial Engineering @ Cornell University</p>
     </header>
 
-    <section>
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Cornell University</strong>, M.Eng. Financial Engineering, GPA: 4.06 – Expected Dec 2025</li>
-            <li><strong>UC Santa Barbara</strong>, B.S. Financial Mathematics & Statistics, GPA: 3.53 – June 2024</li>
-        </ul>
+    <nav>
+        <a href="#about">About Me</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#misc">Misc</a> |
+        <a href="resume.html">Resume</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am passionate about quantitative research, data analytics, and financial engineering applications.</p>
     </section>
 
-    <section>
-        <h2>Technical Skills</h2>
-        <p>Python (Pandas, Scikit-Learn, NumPy, SciPy), R, SQL, MATLAB, Excel</p>
-    </section>
-
-    <section>
-        <h2>Professional Experience</h2>
-        <h3>Quantitative Research Assistant – Cornell University</h3>
-        <p>Feb 2025 – Present</p>
-        <ul>
-            <li>Analyze Apple Inc.'s evolving industry classification by measuring return correlation with sector ETFs using similarity matrices (Pearson correlation, Euclidean distance), K-means and Spectral clustering.</li>
-            <li>Identify Apple’s increasing correlation with consumer discretionary stocks, suggesting an industry drift from tech to consumer focus.</li>
-            <li>Contribute to an academic paper demonstrating how these insights enhance portfolio management and asset allocation.</li>
-        </ul>
-
-        <h3>Asset Management Analyst – Nomura Orient International Securities Co., Ltd.</h3>
-        <p>July – September 2023</p>
-        <ul>
-            <li>Improved a 3-statement model’s predictive power by 15% through quant factor optimization and data cleaning.</li>
-            <li>Automated outlier detection using Python with Pandas and NumPy on large datasets for firms like Kingsoft and Microsoft.</li>
-            <li>Authored a 29-page strategic report on the SaaS industry, covering Microsoft’s AI Copilot and Kingsoft’s WPS AI.</li>
-        </ul>
-    </section>
-
-    <section>
+    <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li><strong>Multi-Period Liquidity-Constrained Portfolio Optimization</strong> – Designed a sector-aware optimization model minimizing liquidity-adjusted Value-at-Risk (LVaR) across 55 U.S. equities. Implemented asset- and regime-specific constraints based on trading volume. Automated data collection and rebalancing with yfinance and CVXPY, outperforming standard benchmarks in back-tests.</li>
-            <li><strong>Quantitative Finance Project</strong> – Developed and back-tested trading strategies using CAPM, mean-variance frontier, and machine learning models (Random Forests, LASSO, SVM). Created market-neutral portfolios and leveraged alternative data to enhance out-of-sample performance.</li>
-            <li><strong>Industry Drift Research</strong> – Used similarity matrices and clustering techniques to track Apple Inc.'s correlation with sector ETFs, revealing a shift from technology to consumer discretionary. Research forms the basis of an academic paper on portfolio strategy implications.</li>
+            <li>Market Microstructure Execution Algorithms</li>
+            <li>K-means Clustering of AAPL vs ETF correlations</li>
+            <li>Fama-French Regression Analysis</li>
         </ul>
     </section>
 
-    <section>
-        <h2>Activities & Interests</h2>
-        <p>Study Group Leader @ UCSB | Interests: Poker, Yoga, Piano, Photography</p>
-    </section>
-
-    <section>
-        <h2>Downloadable Resume</h2>
-        <p><a href="Jiaxin_Li_Resume.pdf" download>Click here to download my resume (PDF)</a></p>
+    <section id="misc">
+        <h2>Miscellaneous</h2>
+        <p>Outside academics, I enjoy hiking and photography.</p>
     </section>
 
     <footer>
-        <p>Contact: jl4586@cornell.edu | Cell: 805-886-7661</p>
+        <p>© 2025 Jiaxin Li</p>
     </footer>
 </body>
 </html>
