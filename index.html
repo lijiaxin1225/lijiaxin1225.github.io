@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jiaxin Li — Quantitative Research</title>
+<meta name="description" content="Portfolio of quantitative research and quant development projects — derivatives pricing, statistical modeling, and systematic strategies.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site">
+  <nav class="site wrap">
+    <a class="brand" href="#top">jiaxinli<span class="dot">.</span>quant</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top" class="wrap">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" style="border-top:none;">
+    <div class="eyebrow">Quantitative Research</div>
+    <div style="display:flex; gap:28px; flex-wrap:wrap; align-items:center;">
+      <img src="assets/img/profile.jpg" alt="Jiaxin Li" style="width:120px; height:120px; object-fit:cover; border-radius:50%; border:1px solid var(--border);">
+      <div>
+        <h1>Hi, I'm Jiaxin Li</h1>
+        <p class="lede" style="margin-bottom:0;">
+          M.Eng in Financial Engineering @ Cornell University, B.S. in Financial Mathematics &amp; Statistics @ UC Santa Barbara.
+          I work at the intersection of finance and technology — trading strategy, asset allocation, and risk
+          management using machine learning, statistical inference, and financial theory.
+        </p>
+      </div>
+    </div>
+    <div class="cta-row" style="margin-top:28px;">
+      <a class="btn btn-primary" href="#projects">View Projects</a>
+      <a class="btn btn-ghost" href="assets/resume/resume.pdf">Download Résumé</a>
+      <a class="btn btn-ghost todo" href="https://github.com/your-username">GitHub</a>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section id="about">
+    <div class="kicker">01 — About</div>
+    <h2>Background</h2>
+    <p>
+      I'm a Financial Engineering master's student at Cornell University with a strong foundation in
+      quantitative modeling, data analysis, and portfolio optimization. Previously, I earned my B.S. in
+      Financial Mathematics &amp; Statistics from UC Santa Barbara. My interests lie at the intersection of
+      finance and technology — particularly in developing strategies for trading, asset allocation, and risk
+      management using machine learning, statistical inference, and financial theory. I've conducted research
+      on Apple Inc.'s industry classification using ETF correlation clustering, contributed to portfolio
+      optimization projects with LVaR constraints, and explored predictive trading signals using models like
+      SVM and Random Forests.
+    </p>
+    <p style="color:var(--text-muted); font-size:0.92rem;">
+      Outside academics: poker, yoga, photography, and piano. I also led study groups during my undergrad and
+      enjoy solving complex math and finance problems collaboratively.
+    </p>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills">
+    <div class="kicker">02 — Skills</div>
+    <h2>Technical Toolkit</h2>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <ul>
+          <li>Python (pandas, scikit-learn, NumPy, SciPy)</li>
+          <li>R</li>
+          <li>SQL</li>
+          <li>MATLAB</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Quant &amp; Math</h3>
+        <ul>
+          <li>Portfolio optimization (mean-variance, LVaR-constrained)</li>
+          <li>Correlation / clustering (K-means, Spectral)</li>
+          <li>CAPM &amp; factor models</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>ML &amp; Data</h3>
+        <ul>
+          <li>Random Forests, SVM, LASSO</li>
+          <li>yfinance, CVXPY</li>
+          <li>Backtesting &amp; out-of-sample evaluation</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3 class="todo">Infra</h3>
+        <ul class="todo">
+          <li>Git, CI/CD</li>
+          <li>Docker</li>
+          <li>Cloud (AWS/GCP)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects">
+    <div class="kicker">03 — Projects</div>
+    <h2>Selected Work</h2>
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="meta"><span>Python</span><span>Portfolio Optimization</span><span>CVXPY</span></div>
+        <h3>Multi-Period Liquidity-Constrained Portfolio Optimization</h3>
+        <p>Designed a sector-aware model minimizing liquidity-adjusted Value-at-Risk (LVaR) across 55 U.S.
+          equities, with asset- and regime-specific constraints based on trading volume. Automated data
+          collection and rebalancing with yfinance and CVXPY.</p>
+        <div class="result">Result: outperformed standard benchmarks in back-tests</div>
+        <div class="links">
+          <a class="todo" href="#">Code →</a>
+          <a class="todo" href="#">Write-up →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="meta"><span>Python</span><span>Clustering</span><span>Research</span></div>
+        <h3>Industry Drift Research — AAPL Classification</h3>
+        <p>Used similarity matrices (Pearson correlation, Euclidean distance) and clustering (K-means, Spectral)
+          to track Apple Inc.'s transition from a tech to a consumer-discretionary sector identity, based on
+          return correlation with sector ETFs.</p>
+        <div class="result">Result: basis for an academic paper on industry drift and portfolio management</div>
+        <div class="links">
+          <a class="todo" href="#">Code →</a>
+          <a class="todo" href="#">Write-up →</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="meta"><span>Python</span><span>Statistical Arbitrage</span><span>ML</span></div>
+        <h3>Quantitative Trading Strategies</h3>
+        <p>Built and back-tested market-neutral strategies using CAPM, mean-variance optimization, and ML
+          models (LASSO, SVM, Random Forests) to enhance out-of-sample performance, incorporating alternative
+          data.</p>
+        <div class="result todo">Result: add a concrete metric (Sharpe, drawdown, hit rate)</div>
+        <div class="links">
+          <a class="todo" href="#">Code →</a>
+          <a class="todo" href="#">Write-up →</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section id="experience">
+    <div class="kicker">04 — Experience</div>
+    <h2>Experience &amp; Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="when">Feb 2025 — Present</div>
+        <div>
+          <h3>Quantitative Research Assistant</h3>
+          <div class="org">Cornell University</div>
+          <p>Measured AAPL's return correlation with sector ETFs via similarity matrices and K-means/Spectral
+            clustering; found increasing correlation with consumer discretionary stocks, indicating industry
+            drift. Contributing to an academic paper on the finding.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="when">Jul — Sep 2023</div>
+        <div>
+          <h3>Asset Management Analyst</h3>
+          <div class="org">Nomura Orient International Securities Co., Ltd.</div>
+          <p>Improved a 3-statement model's predictive accuracy by 15% via quant factor optimization; built
+            Python outlier-detection models on large datasets (Kingsoft, Microsoft); authored a 29-page report
+            on Microsoft's AI Copilot and Kingsoft's WPS AI in the SaaS sector.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="when">2023 — Dec 2025</div>
+        <div>
+          <h3>M.Eng., Financial Engineering — GPA 4.06</h3>
+          <div class="org">Cornell University</div>
+          <p>Expected December 2025.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="when">2020 — 2024</div>
+        <div>
+          <h3>B.S., Financial Mathematics &amp; Statistics — GPA 3.53</h3>
+          <div class="org">UC Santa Barbara</div>
+          <p>Completed June 2024.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="kicker">05 — Contact</div>
+    <h2>Get in Touch</h2>
+    <div class="contact-row">
+      <a href="mailto:jl4586@cornell.edu">jl4586@cornell.edu</a>
+      <a class="todo" href="https://linkedin.com/in/your-profile">LinkedIn</a>
+      <a class="todo" href="https://github.com/your-username">GitHub</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site wrap">
+  <span>© 2026 Jiaxin Li. Built with plain HTML/CSS, hosted on GitHub Pages.</span>
+</footer>
+
+</body>
+</html>
